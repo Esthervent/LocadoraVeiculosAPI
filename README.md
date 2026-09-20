@@ -9,8 +9,6 @@
 **Aluna:** Esther Ventura de Souza  
 **Professor:** Ramon Lacerda Marques
 
----
-
 ## Sobre o projeto
 
 O projeto **LocadoraVeiculosAPI** tem como objetivo desenvolver o backend de um sistema de aluguel de veículos utilizando C#, ASP.NET Core, Entity Framework Core, SQL Server e Swagger.
