@@ -1,15 +1,12 @@
 # Etapa 1 - Modelagem do Banco de Dados
 
 A primeira etapa do projeto tem como objetivo realizar a modelagem do banco de dados de um sistema de aluguel de veículos.
-
 Foram definidas as entidades principais do domínio, seus atributos, chaves primárias, chaves estrangeiras, relacionamentos e restrições de integridade.
-
 O modelo foi posteriormente implementado em C# com Entity Framework Core e traduzido para um banco de dados relacional SQL Server.
 
 ## Entidades do sistema
 
 ### Fabricante
-
 Representa o fabricante ou marca responsável pelos veículos cadastrados na locadora.
 
 **Atributos:**
@@ -160,3 +157,102 @@ public DbSet<CategoriaVeiculo> CategoriasVeiculo { get; set; }
 public DbSet<Veiculo> Veiculos { get; set; }
 public DbSet<Cliente> Clientes { get; set; }
 public DbSet<Aluguel> Alugueis { get; set; }
+```
+
+Além dos `DbSet`s, o método `OnModelCreating` foi utilizado para configurar os relacionamentos entre as entidades e as restrições de unicidade do banco de dados.
+
+Entre as configurações realizadas estão:
+
+* relacionamento entre `Fabricante` e `Veiculo`;
+* relacionamento entre `CategoriaVeiculo` e `Veiculo`;
+* relacionamento entre `Cliente` e `Aluguel`;
+* relacionamento entre `Veiculo` e `Aluguel`;
+* restrição de unicidade para nome do fabricante;
+* restrição de unicidade para nome da categoria;
+* restrição de unicidade para placa do veículo;
+* restrição de unicidade para CPF do cliente;
+* restrição de unicidade para e-mail do cliente.
+
+## Banco de dados
+
+O banco de dados foi criado no SQL Server por meio das migrations do Entity Framework Core.
+
+A migration inicial criada foi:
+
+```
+InitialCreate
+```
+
+Para criar a migration foi utilizado o comando:
+
+```
+Add-Migration InitialCreate
+```
+
+Em seguida, a estrutura definida no projeto foi aplicada ao banco de dados por meio do comando:
+
+```
+Update-Database
+```
+
+O banco de dados criado foi:
+
+`LocadoraVeiculosDb`
+
+As principais tabelas geradas foram:
+
+* `Fabricantes`
+* `CategoriasVeiculo`
+* `Veiculos`
+* `Clientes`
+* `Alugueis`
+
+Também foi criada automaticamente pelo Entity Framework Core a tabela:
+
+`__EFMigrationsHistory`
+
+Essa tabela é utilizada pelo Entity Framework Core para controlar quais migrations já foram aplicadas ao banco de dados.
+
+## Evidências
+
+### ApplicationContext
+
+A classe `ApplicationContext` foi configurada para mapear as cinco entidades do sistema e seus relacionamentos por meio do Entity Framework Core.
+
+A imagem abaixo apresenta parte da configuração realizada no projeto:
+
+![ApplicationContext](application-context.png)
+
+### Banco de dados no SQL Server
+
+Após a execução da migration inicial, o banco `LocadoraVeiculosDb` foi criado no SQL Server com as tabelas correspondentes às entidades modeladas.
+
+A imagem abaixo apresenta as tabelas geradas no banco de dados:
+
+![Banco de Dados SQL Server](sql-server-tabelas.png)
+
+## Estrutura implementada
+
+Ao final desta etapa, o projeto possui cinco entidades principais:
+
+* `Fabricante`
+* `CategoriaVeiculo`
+* `Veiculo`
+* `Cliente`
+* `Aluguel`
+
+As entidades foram implementadas como classes C# e mapeadas para o banco de dados utilizando Entity Framework Core.
+
+Os relacionamentos definidos permitem representar corretamente o funcionamento básico de uma locadora de veículos, incluindo a associação dos veículos aos seus fabricantes e categorias e o vínculo de cada aluguel a um cliente e a um veículo.
+
+## Conclusão
+
+A Etapa 1 permitiu definir e implementar a estrutura inicial do banco de dados do sistema de aluguel de veículos.
+
+Foram modeladas cinco entidades relacionadas, contemplando as entidades principais solicitadas para o sistema e a entidade adicional `CategoriaVeiculo`, utilizada para organizar e classificar os veículos da frota.
+
+Também foram definidas chaves primárias, chaves estrangeiras, campos obrigatórios e restrições de unicidade para dados importantes, como placa, CPF e e-mail.
+
+Por meio do Entity Framework Core, as classes C# foram mapeadas para o banco de dados relacional, e a migration inicial permitiu gerar no SQL Server as tabelas correspondentes ao modelo desenvolvido.
+
+Dessa forma, a estrutura criada nesta etapa estabelece a base necessária para o desenvolvimento das próximas funcionalidades do sistema, como cadastro, consulta, atualização e exclusão de registros, além do gerenciamento dos aluguéis de veículos. 
