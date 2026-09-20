@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0811566-6DAF-5A86-C1CD-ED96937E62AD}|src\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI.csproj|c:\\users\\esther\\source\\repos\\locadoraveiculosapi\\src\\locadoraveiculosapi\\migrations\\20260920190735_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0811566-6DAF-5A86-C1CD-ED96937E62AD}|src\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI.csproj|solutionrelative:src\\locadoraveiculosapi\\migrations\\20260920190735_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Data\\ApplicationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Data\\ApplicationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\CategoriaVeiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Models\\CategoriaVeiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Aluguel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Models\\Aluguel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Models\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Models\\Veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Fabricante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LocadoraVeiculosAPI\\Models\\Fabricante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20260920190735_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\src\\LocadoraVeiculosAPI\\Migrations\\20260920190735_InitialCreate.cs",
+              "RelativeDocumentMoniker": "src\\LocadoraVeiculosAPI\\Migrations\\20260920190735_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\src\\LocadoraVeiculosAPI\\Migrations\\20260920190735_InitialCreate.cs",
+              "RelativeToolTip": "src\\LocadoraVeiculosAPI\\Migrations\\20260920190735_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T21:00:47.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Program.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Program.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T19:02:15.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\appsettings.json",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-20T19:01:32.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Data\\ApplicationContext.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:59:28.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoriaVeiculo.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\CategoriaVeiculo.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Models\\CategoriaVeiculo.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\CategoriaVeiculo.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Models\\CategoriaVeiculo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:42:10.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Aluguel.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Aluguel.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Models\\Aluguel.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Aluguel.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Models\\Aluguel.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAzwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:41:48.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Cliente.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:41:30.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Veiculo.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Veiculo.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Models\\Veiculo.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Veiculo.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Models\\Veiculo.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:41:19.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Fabricante.cs",
+              "DocumentMoniker": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Fabricante.cs",
+              "RelativeDocumentMoniker": "LocadoraVeiculosAPI\\Models\\Fabricante.cs",
+              "ToolTip": "C:\\Users\\Esther\\source\\repos\\LocadoraVeiculosAPI\\LocadoraVeiculosAPI\\Models\\Fabricante.cs",
+              "RelativeToolTip": "LocadoraVeiculosAPI\\Models\\Fabricante.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:41:04.461Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
