@@ -36,9 +36,9 @@ A proposta contempla desde a modelagem do banco de dados até a implementação 
 ## Estrutura do trabalho
 
 - [Etapa 1 - Modelagem do Banco de Dados](docs/etapa-1/README.md)
-- [Etapa 2 - Implementação do Backend](docs/estapa-2/README.md)
-- [Etapa 3 - Testes e Documentação](docs/estapa-3/README.md)
-- [Etapa 4 - Apresentação em formato Pitch](docs/estapa-4/README.md)
+- [Etapa 2 - Implementação do Backend](docs/etapa-2/README.md)
+- [Etapa 3 - Testes e Documentação](docs/etapa-3/README.md)
+- [Etapa 4 - Apresentação em formato Pitch](docs/etapa-4/README.md)
 
 ## Banco de dados
 
