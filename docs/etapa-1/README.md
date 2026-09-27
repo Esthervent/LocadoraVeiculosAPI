@@ -93,7 +93,7 @@ Os campos `DataDevolucao` e `QuilometragemFinal` foram definidos como opcionais 
 
 O modelo abaixo representa as entidades, atributos, chaves primárias, chaves estrangeiras e relacionamentos utilizados no sistema.
 
-![Modelo do banco de dados](modelo-banco.png)
+![Modelo do banco de dados](evidencias/modelo-banco.png)
 
 ## Chaves primárias
 
@@ -221,7 +221,7 @@ A classe `ApplicationContext` foi configurada para mapear as cinco entidades do 
 
 A imagem abaixo apresenta parte da configuração realizada no projeto:
 
-![ApplicationContext](application-context.png)
+![ApplicationContext](evidencias/application-context.png)
 
 ### Banco de dados no SQL Server
 
@@ -229,7 +229,7 @@ Após a execução da migration inicial, o banco `LocadoraVeiculosDb` foi criado
 
 A imagem abaixo apresenta as tabelas geradas no banco de dados:
 
-![Banco de Dados SQL Server](sql-server-tabelas.png)
+![Banco de Dados SQL Server](evidencias/sql-server-tabelas.png)
 
 ## Estrutura implementada
 
