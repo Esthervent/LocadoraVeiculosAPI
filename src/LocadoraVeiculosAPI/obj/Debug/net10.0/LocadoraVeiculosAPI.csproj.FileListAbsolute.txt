@@ -330,3 +330,7 @@ C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\obj\Deb
 C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\obj\Debug\net10.0\LocadoraVeiculosAPI.pdb
 C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\obj\Debug\net10.0\LocadoraVeiculosAPI.genruntimeconfig.cache
 C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\obj\Debug\net10.0\ref\LocadoraVeiculosAPI.dll
+C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\obj\Debug\net10.0\LocadoraVeiculosAPI.sourcelink.json
+C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Esther\source\repos\LocadoraVeiculosAPI\src\LocadoraVeiculosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
