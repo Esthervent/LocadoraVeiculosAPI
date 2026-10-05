@@ -29,38 +29,38 @@ O controller `FabricantesController` disponibiliza as operações CRUD para o ge
 **POST `/api/Fabricantes`**
 
 - **Parâmetros:** nenhum parâmetro de rota.
-- **Corpo da requisição (`Body`):** `nome`, `paisOrigem`.
+- **Corpo da requisição (Body):** nome, paisOrigem.
 - **Possíveis respostas:**
-  - `201 Created` — fabricante cadastrado com sucesso.
-  - `400 Bad Request` — dados inválidos.
-  - `409 Conflict` — fabricante já cadastrado.
+  - 201 Created — fabricante cadastrado com sucesso.
+  - 400 Bad Request — dados inválidos.
+  - 409 Conflict — fabricante já cadastrado.
 
 **PUT `/api/Fabricantes/{id}`**
 
-- **Parâmetros:** `id` — identificador do fabricante.
+- **Parâmetros:** id — identificador do fabricante.
 - **Possíveis respostas:**
-  - `204 No Content` — fabricante atualizado com sucesso.
-  - `404 Not Found` — fabricante não encontrado.
+  - 204 No Content — fabricante atualizado com sucesso.
+  - 404 Not Found — fabricante não encontrado.
 
 **GET `/api/Fabricantes`**
 
 - **Parâmetros:** nenhum.
 - **Possíveis respostas:**
-  - `200 OK` — lista de fabricantes retornada com sucesso.
+  - 200 OK — lista de fabricantes retornada com sucesso.
 
 **GET `/api/Fabricantes/{id}`**
 
-- **Parâmetros:** `id` — identificador do fabricante.
+- **Parâmetros:** id — identificador do fabricante.
 - **Possíveis respostas:**
-  - `200 OK` — fabricante encontrado.
-  - `404 Not Found` — fabricante não encontrado.
+  - 200 OK — fabricante encontrado.
+  - 404 Not Found — fabricante não encontrado.
 
 **DELETE `/api/Fabricantes/{id}`**
 
-- **Parâmetros:** `id` — identificador do fabricante.
+- **Parâmetros:** id — identificador do fabricante.
 - **Possíveis respostas:**
-  - `204 No Content` — fabricante excluído com sucesso.
-  - `404 Not Found` — fabricante não encontrado.
+  - 204 No Content — fabricante excluído com sucesso.
+  - 404 Not Found — fabricante não encontrado.
 
 ---
 
@@ -75,41 +75,41 @@ O controller `CategoriasVeiculoController` é responsável pelo gerenciamento da
 **POST `/api/CategoriasVeiculo`**
 
 - **Parâmetros:** nenhum parâmetro de rota.
-- **Corpo da requisição (`Body`):** `nome`, `descricao`.
+- **Corpo da requisição (Body):** nome, descricao.
 - **Possíveis respostas:**
-  - `201 Created` — categoria cadastrada com sucesso.
-  - `400 Bad Request` — dados inválidos.
-  - `409 Conflict` — nome da categoria já cadastrado.
+  - 201 Created — categoria cadastrada com sucesso.
+  - 400 Bad Request — dados inválidos.
+  - 409 Conflict — nome da categoria já cadastrado.
 
 **PUT `/api/CategoriasVeiculo/{id}`**
 
-- **Parâmetros:** `id` — identificador da categoria.
-- **Corpo da requisição (`Body`):** `nome`, `descricao`.
+- **Parâmetros:** id — identificador da categoria.
+- **Corpo da requisição (Body):** nome, descricao.
 - **Possíveis respostas:**
-  - `204 No Content` — categoria atualizada com sucesso.
-  - `404 Not Found` — categoria não encontrada.
-  - `409 Conflict` — nome da categoria já cadastrado.
+  - 204 No Content — categoria atualizada com sucesso.
+  - 404 Not Found — categoria não encontrada.
+  - 409 Conflict — nome da categoria já cadastrado.
 
 **GET `/api/CategoriasVeiculo`**
 
 - **Parâmetros:** nenhum.
 - **Possíveis respostas:**
-  - `200 OK` — lista de categorias retornada com sucesso.
+  - 200 OK — lista de categorias retornada com sucesso.
 
 **GET `/api/CategoriasVeiculo/{id}`**
 
-- **Parâmetros:** `id` — identificador da categoria.
+- **Parâmetros:** id — identificador da categoria.
 - **Possíveis respostas:**
-  - `200 OK` — categoria encontrada.
-  - `404 Not Found` — categoria não encontrada.
+  - 200 OK — categoria encontrada.
+  - 404 Not Found — categoria não encontrada.
 
 **DELETE `/api/CategoriasVeiculo/{id}`**
 
-- **Parâmetros:** `id` — identificador da categoria.
+- **Parâmetros:** id — identificador da categoria.
 - **Possíveis respostas:**
-  - `204 No Content` — categoria excluída com sucesso.
-  - `404 Not Found` — categoria não encontrada.
-  - `409 Conflict` — categoria vinculada a registros que impedem sua exclusão.
+  - 204 No Content — categoria excluída com sucesso.
+  - 404 Not Found — categoria não encontrada.
+  - 409 Conflict — categoria vinculada a registros que impedem sua exclusão.
 
 ---
 
@@ -124,40 +124,40 @@ O controller `ClientesController` é responsável pelo cadastro e gerenciamento 
 **POST `/api/Clientes`**
 
 - **Parâmetros:** nenhum parâmetro de rota.
-- **Corpo da requisição (`Body`):** `nome`, `cpf`, `email`, `telefone`.
+- **Corpo da requisição (Body):** nome, cpf, email, telefone.
 - **Possíveis respostas:**
-  - `201 Created` — cliente cadastrado com sucesso.
-  - `400 Bad Request` — dados inválidos.
-  - `409 Conflict` — CPF ou e-mail já cadastrado.
+  - 201 Created — cliente cadastrado com sucesso.
+  - 400 Bad Request — dados inválidos.
+  - 409 Conflict — CPF ou e-mail já cadastrado.
 
 **PUT `/api/Clientes/{id}`**
 
-- **Parâmetros:** `id` — identificador do cliente.
-- **Corpo da requisição (`Body`):** `nome`, `cpf`, `email`, `telefone`.
+- **Parâmetros:** id — identificador do cliente.
+- **Corpo da requisição (Body):** nome, cpf, email, telefone.
 - **Possíveis respostas:**
-  - `204 No Content` — cliente atualizado com sucesso.
-  - `404 Not Found` — cliente não encontrado.
-  - `409 Conflict` — CPF ou e-mail já cadastrado.
+  - 204 No Content — cliente atualizado com sucesso.
+  - 404 Not Found — cliente não encontrado.
+  - 409 Conflict — CPF ou e-mail já cadastrado.
 
 **GET `/api/Clientes`**
 
 - **Parâmetros:** nenhum.
 - **Possíveis respostas:**
-  - `200 OK` — lista de clientes retornada com sucesso.
+  - 200 OK — lista de clientes retornada com sucesso.
 
 **GET `/api/Clientes/{id}`**
 
-- **Parâmetros:** `id` — identificador do cliente.
+- **Parâmetros:** id — identificador do cliente.
 - **Possíveis respostas:**
-  - `200 OK` — cliente encontrado.
-  - `404 Not Found` — cliente não encontrado.
+  - 200 OK — cliente encontrado.
+  - 404 Not Found — cliente não encontrado.
 
 **DELETE `/api/Clientes/{id}`**
 
-- **Parâmetros:** `id` — identificador do cliente.
+- **Parâmetros:** id — identificador do cliente.
 - **Possíveis respostas:**
-  - `204 No Content` — cliente excluído com sucesso.
-  - `404 Not Found` — cliente não encontrado.
+  - 204 No Content — cliente excluído com sucesso.
+  - 404 Not Found — cliente não encontrado.
 
 ---
 
@@ -172,42 +172,42 @@ O controller `VeiculosController` é responsável pelo gerenciamento dos veícul
 **POST `/api/Veiculos`**
 
 - **Parâmetros:** nenhum parâmetro de rota.
-- **Corpo da requisição (`Body`):** `modelo`, `anoFabricacao`, `quilometragem`, `placa`, `disponivel`, `fabricanteId`, `categoriaVeiculoId`.
+- **Corpo da requisição (Body):** modelo, anoFabricacao, quilometragem, placa, disponivel, fabricanteId, categoriaVeiculoId.
 - **Possíveis respostas:**
-  - `201 Created` — veículo cadastrado com sucesso.
-  - `400 Bad Request` — dados inválidos ou fabricante/categoria inválidos.
-  - `409 Conflict` — placa já cadastrada.
+  - 201 Created — veículo cadastrado com sucesso.
+  - 400 Bad Request — dados inválidos ou fabricante/categoria inválidos.
+  - 409 Conflict — placa já cadastrada.
 
 **PUT `/api/Veiculos/{id}`**
 
-- **Parâmetros:** `id` — identificador do veículo.
-- **Corpo da requisição (`Body`):** dados atualizados do veículo.
+- **Parâmetros:** id — identificador do veículo.
+- **Corpo da requisição (Body):** dados atualizados do veículo.
 - **Possíveis respostas:**
-  - `204 No Content` — veículo atualizado com sucesso.
-  - `400 Bad Request` — dados inválidos ou fabricante/categoria inválidos.
-  - `404 Not Found` — veículo não encontrado.
-  - `409 Conflict` — placa já cadastrada.
+  - 204 No Content — veículo atualizado com sucesso.
+  - 400 Bad Request — dados inválidos ou fabricante/categoria inválidos.
+  - 404 Not Found — veículo não encontrado.
+  - 409 Conflict — placa já cadastrada.
 
 **GET `/api/Veiculos`**
 
 - **Parâmetros:** nenhum.
 - **Possíveis respostas:**
-  - `200 OK` — lista de veículos retornada com sucesso.
+  - 200 OK — lista de veículos retornada com sucesso.
 
 **GET `/api/Veiculos/{id}`**
 
-- **Parâmetros:** `id` — identificador do veículo.
+- **Parâmetros:** id — identificador do veículo.
 - **Possíveis respostas:**
-  - `200 OK` — veículo encontrado.
-  - `404 Not Found` — veículo não encontrado.
+  - 200 OK — veículo encontrado.
+  - 404 Not Found — veículo não encontrado.
 
 **DELETE `/api/Veiculos/{id}`**
 
-- **Parâmetros:** `id` — identificador do veículo.
+- **Parâmetros:** id — identificador do veículo.
 - **Possíveis respostas:**
-  - `204 No Content` — veículo excluído com sucesso.
-  - `404 Not Found` — veículo não encontrado.
-  - `409 Conflict` — veículo vinculado a registros que impedem sua exclusão.
+  - 204 No Content — veículo excluído com sucesso.
+  - 404 Not Found — veículo não encontrado.
+  - 409 Conflict — veículo vinculado a registros que impedem sua exclusão.
 
 ---
 
@@ -224,47 +224,47 @@ As operações de aluguel também aplicam regras de negócio, como a verificaç�
 **POST `/api/Alugueis`**
 
 - **Parâmetros:** nenhum parâmetro de rota.
-- **Corpo da requisição (`Body`):** `dataInicio`, `dataFimPrevista`, `quilometragemInicial`, `valorDiaria`, `clienteId`, `veiculoId`.
+- **Corpo da requisição (Body):** dataInicio, dataFimPrevista, quilometragemInicial, valorDiaria, clienteId, veiculoId.
 - **Possíveis respostas:**
-  - `201 Created` — aluguel criado com sucesso e veículo marcado como indisponível.
-  - `400 Bad Request` — dados inválidos.
-  - `409 Conflict` — veículo indisponível para aluguel.
+  - 201 Created — aluguel criado com sucesso e veículo marcado como indisponível.
+  - 400 Bad Request — dados inválidos.
+  - 409 Conflict — veículo indisponível para aluguel.
 
 **GET `/api/Alugueis`**
 
 - **Parâmetros:** nenhum.
 - **Possíveis respostas:**
-  - `200 OK` — lista de aluguéis retornada com sucesso.
+  - 200 OK — lista de aluguéis retornada com sucesso.
 
 **GET `/api/Alugueis/{id}`**
 
-- **Parâmetros:** `id` — identificador do aluguel.
+- **Parâmetros:** id — identificador do aluguel.
 - **Possíveis respostas:**
-  - `200 OK` — aluguel encontrado.
-  - `404 Not Found` — aluguel não encontrado.
+  - 200 OK — aluguel encontrado.
+  - 404 Not Found — aluguel não encontrado.
 
 **PUT `/api/Alugueis/{id}`**
 
-- **Parâmetros:** `id` — identificador do aluguel.
+- **Parâmetros:** id — identificador do aluguel.
 - **Possíveis respostas:**
-  - `204 No Content` — aluguel atualizado com sucesso.
-  - `404 Not Found` — aluguel não encontrado.
+  - 204 No Content — aluguel atualizado com sucesso.
+  - 404 Not Found — aluguel não encontrado.
 
 **DELETE `/api/Alugueis/{id}`**
 
-- **Parâmetros:** `id` — identificador do aluguel.
+- **Parâmetros:** id — identificador do aluguel.
 - **Possíveis respostas:**
-  - `204 No Content` — aluguel excluído com sucesso.
-  - `404 Not Found` — aluguel não encontrado.
+  - 204 No Content — aluguel excluído com sucesso.
+  - 404 Not Found — aluguel não encontrado.
 
 **PUT `/api/Alugueis/{id}/devolucao`**
 
-- **Parâmetros:** `id` — identificador do aluguel.
-- **Corpo da requisição (`Body`):** dados necessários para registrar a devolução, conforme o modelo definido pela API.
+- **Parâmetros:** id — identificador do aluguel.
+- **Corpo da requisição (Body):** dados necessários para registrar a devolução, conforme o modelo definido pela API.
 - **Possíveis respostas:**
-  - `200 OK` — devolução registrada e veículo liberado.
-  - `404 Not Found` — aluguel não encontrado.
-  - `409 Conflict` — tentativa de realizar uma devolução já registrada.
+  - 200 OK — devolução registrada e veículo liberado.
+  - 404 Not Found — aluguel não encontrado.
+  - 409 Conflict — tentativa de realizar uma devolução já registrada.
 
 ---
 
@@ -278,45 +278,45 @@ Essas consultas utilizam relacionamentos entre as entidades, incluindo operaçõ
 
 #### Especificação técnica — Consultas
 
-GET /api/Consultas/veiculos/fabricante/{fabricanteId}
+**GET** `/api/Consultas/veiculos/fabricante/{fabricanteId}`
 
-- **Parâmetros:** `fabricanteId` — identificador do fabricante.
+- **Parâmetros:** fabricanteId — identificador do fabricante.
 - **Possíveis respostas:**
-  - `200 OK` — veículos encontrados para o fabricante informado.
-  - `404 Not Found` — fabricante não encontrado ou sem registros relacionados.
+  - 200 OK — veículos encontrados para o fabricante informado.
+  - 404 Not Found — fabricante não encontrado ou sem registros relacionados.
 
-GET /api/Consultas/veiculos/categoria/{categoriaId}
+**GET** `/api/Consultas/veiculos/categoria/{categoriaId}`
 
-- **Parâmetros:** `categoriaId` — identificador da categoria.
+- **Parâmetros:** categoriaId — identificador da categoria.
 - **Possíveis respostas:**
-  - `200 OK` — veículos encontrados para a categoria informada.
-  - `404 Not Found` — categoria não encontrada ou sem registros relacionados.
+  - 200 OK — veículos encontrados para a categoria informada.
+  - 404 Not Found — categoria não encontrada ou sem registros relacionados.
 
-GET /api/Consultas/veiculos/disponiveis
+**GET** `/api/Consultas/veiculos/disponiveis`
 
 - **Parâmetros:** nenhum.
 - **Possíveis respostas:**
-  - `200 OK` — lista de veículos disponíveis.
+  - 200 OK — lista de veículos disponíveis.
 
-GET /api/Consultas/alugueis/cliente/{clienteId}
+**GET** `/api/Consultas/alugueis/cliente/{clienteId}`
 
-- **Parâmetros:** `clienteId` — identificador do cliente.
-- **Relacionamentos:** utiliza **`INNER JOIN`** para relacionar `Aluguel`, `Cliente` e `Veiculo`, retornando os registros que possuem correspondência entre as entidades.
+- **Parâmetros:** clienteId — identificador do cliente.
+- **Relacionamentos:** utiliza INNER JOIN para relacionar Aluguel, Cliente e Veiculo, retornando os registros que possuem correspondência entre as entidades.
 - **Possíveis respostas:**
-  - `200 OK` — histórico de aluguéis do cliente.
+  - 200 OK — histórico de aluguéis do cliente.
 
-GET /api/Consultas/alugueis/periodo
+**GET** `/api/Consultas/alugueis/periodo`
 
 - **Parâmetros:** intervalo de datas utilizado para filtrar os aluguéis.
 - **Possíveis respostas:**
-  - `200 OK` — lista de aluguéis encontrados no período informado.
+  - 200 OK — lista de aluguéis encontrados no período informado.
 
-GET /api/Consultas/fabricantes-com-veiculos
+**GET** `/api/Consultas/fabricantes-com-veiculos`
 
 - **Parâmetros:** nenhum.
-- **Relacionamentos:** utiliza **`LEFT JOIN`** para retornar todos os fabricantes, inclusive aqueles que não possuem veículos relacionados.
+- **Relacionamentos:** utiliza LEFT JOIN para retornar todos os fabricantes, inclusive aqueles que não possuem veículos relacionados.
 - **Possíveis respostas:**
-  - `200 OK` — lista de fabricantes e seus veículos relacionados.
+  - 200 OK — lista de fabricantes e seus veículos relacionados.
 
 ### Uso de INNER JOIN
 
@@ -326,11 +326,7 @@ Na consulta:
 
 **GET** `/api/Consultas/alugueis/cliente/{clienteId}`
 
-são relacionadas as entidades:
-
-- Aluguel;
-- Cliente;
-- Veiculo.
+são relacionadas as entidades: Aluguel, Cliente e Veiculo.
 
 O relacionamento permite retornar informações do aluguel juntamente com os dados do cliente e do veículo correspondente.
 
