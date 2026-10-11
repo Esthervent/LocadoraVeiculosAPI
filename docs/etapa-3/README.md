@@ -262,7 +262,7 @@ As operações de aluguel também aplicam regras de negócio, como a verificaç�
 - **Parâmetros:** id — identificador do aluguel.
 - **Corpo da requisição (Body):** dados necessários para registrar a devolução, conforme o modelo definido pela API.
 - **Possíveis respostas:**
-  - 200 OK — devolução registrada e veículo liberado.
+  - 204 No Content — devolução registrada e veículo liberado.
   - 404 Not Found — aluguel não encontrado.
   - 409 Conflict — tentativa de realizar uma devolução já registrada.
 
