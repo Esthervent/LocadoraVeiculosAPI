@@ -1,0 +1,617 @@
+/* ==========================================
+   MOVIA | Gestão de Locadoras
+   Identidade visual: Oliva + Laranja
+========================================== */
+
+:root {
+    --cor-oliva: #637D32;
+    --cor-oliva-escuro: #4D6427;
+    --cor-laranja: #F07824;
+    --cor-laranja-escuro: #D96313;
+
+    --cor-fundo: #FAFAF5;
+    --cor-branco: #FFFFFF;
+    --cor-verde-claro: #E4EBCF;
+
+    --cor-texto: #263526;
+    --cor-texto-secundario: #687467;
+    --cor-borda: #E3E9D9;
+
+    --sombra: 0 4px 20px rgba(38, 53, 38, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.marca-ponto {
+    color: var(--cor-laranja);
+}
+
+/* Layout principal */
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menu lateral */
+
+.sidebar {
+    width: 260px;
+    min-width: 260px;
+    min-height: 100vh;
+    background: var(--cor-branco);
+    border-right: 1px solid var(--cor-borda);
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 55px;
+    padding: 0 8px;
+    color: var(--cor-texto);
+}
+
+.sidebar-brand:hover {
+    color: var(--cor-texto);
+}
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor-oliva);
+    color: white;
+    border-radius: 13px;
+    font-size: 23px;
+}
+
+.sidebar-brand strong {
+    display: block;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+.sidebar-brand small {
+    display: block;
+    margin-top: 6px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: var(--cor-oliva);
+}
+
+.sidebar-label {
+    padding: 0 14px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #929C8B;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px 15px;
+    border-radius: 11px;
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 18px;
+}
+
+.sidebar-nav .nav-link:hover {
+    background: #F1F5E8;
+    color: var(--cor-oliva-escuro);
+}
+
+.sidebar-nav .nav-link.active {
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva-escuro);
+    font-weight: 700;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding: 15px 10px 0;
+    border-top: 1px solid var(--cor-borda);
+    font-size: 12px;
+    color: var(--cor-texto-secundario);
+}
+
+.sidebar-footer i {
+    margin-right: 6px;
+    color: var(--cor-oliva);
+}
+
+/* Conteúdo */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 42px;
+    background: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.topbar-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--cor-oliva);
+}
+
+.topbar h1 {
+    margin: 5px 0 0;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.topbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva);
+    font-size: 18px;
+}
+
+.dashboard-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 35px 42px 70px;
+}
+
+/* Banner de boas-vindas */
+
+.welcome-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--cor-oliva);
+    border-radius: 20px;
+    padding: 38px 42px;
+    color: white;
+    min-height: 235px;
+}
+
+.welcome-banner > div:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: #E4EBCF;
+}
+
+.welcome-banner h2 {
+    margin-bottom: 10px;
+    font-size: clamp(25px, 3vw, 36px);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.welcome-banner p {
+    max-width: 450px;
+    margin-bottom: 22px;
+    color: #EDF2E5;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.welcome-decoration {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-12deg);
+    font-size: 165px;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.btn-laranja {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 20px;
+    background: var(--cor-laranja);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.btn-laranja:hover {
+    background: var(--cor-laranja-escuro);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Indicadores */
+
+.metrics-section {
+    margin-top: 25px;
+}
+
+.metric-card {
+    height: 100%;
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 23px;
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+}
+
+.metric-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva);
+    font-size: 19px;
+}
+
+.metric-card span {
+    color: var(--cor-texto-secundario);
+    font-size: 13px;
+}
+
+.metric-card strong {
+    margin-top: 5px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--cor-texto);
+}
+
+/* Veículos */
+
+.vehicles-section {
+    margin-top: 42px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 22px;
+}
+
+.section-eyebrow {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--cor-oliva);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-bottom: 5px;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.section-heading p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--cor-texto-secundario);
+}
+
+.card {
+    height: 100%;
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(38, 53, 38, 0.1);
+}
+
+.card-body {
+    padding: 23px;
+}
+
+.card-title {
+    color: var(--cor-oliva-escuro);
+    font-weight: 750;
+}
+
+.card .badge {
+    padding: 7px 11px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+/* Acessibilidade */
+
+:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
+
+/* Responsividade */
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 215px;
+        min-width: 215px;
+        padding: 25px 12px;
+    }
+
+    .topbar {
+        padding: 25px;
+    }
+
+    .dashboard-content {
+        padding: 28px 25px 55px;
+    }
+}
+
+@media (max-width: 767px) {
+    .app-layout {
+        display: block;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        padding: 15px;
+    }
+
+    .sidebar-brand {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-label,
+    .sidebar-footer {
+        display: none;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .sidebar-nav .nav-link {
+        white-space: nowrap;
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .topbar {
+        padding: 20px;
+    }
+
+    .topbar-profile > span:last-child {
+        display: none;
+    }
+
+    .dashboard-content {
+        padding: 22px 16px 45px;
+    }
+
+    .welcome-banner {
+        padding: 30px 25px;
+    }
+
+    .welcome-decoration {
+        right: -20px;
+        font-size: 115px;
+    }
+
+    .metric-card {
+        min-height: 145px;
+        padding: 18px;
+    }
+}
+
+
+/* Ferramentas de gerenciamento da frota */
+
+.frota-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.frota-filtros {
+    display: flex;
+    flex: 1;
+    gap: 12px;
+    max-width: 650px;
+}
+
+.frota-filtros .input-group {
+    flex: 1;
+    min-width: 0;
+}
+
+.frota-filtros .input-group-text {
+    background: white;
+    border-color: var(--cor-borda);
+    color: var(--cor-oliva);
+}
+
+.frota-filtros .form-control {
+    border-color: var(--cor-borda);
+    font-size: 13px;
+}
+
+.frota-filtros .form-control:focus {
+    border-color: var(--cor-oliva);
+    box-shadow: 0 0 0 3px rgba(99, 125, 50, 0.12);
+}
+
+.frota-toolbar .btn-laranja {
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .frota-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .frota-filtros {
+        max-width: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .frota-filtros {
+        flex-direction: column;
+    }
+}
+
+
+/* Modal de veículos */
+
+.modal-movia {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-movia .modal-header {
+    padding: 25px 30px 18px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.modal-movia .modal-body {
+    padding: 25px 30px;
+}
+
+.modal-movia .modal-footer {
+    padding: 18px 30px;
+    border-top: 1px solid var(--cor-borda);
+}
+
+.modal-movia .form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+.modal-movia .form-control,
+.modal-movia .form-select {
+    min-height: 43px;
+    border-color: var(--cor-borda);
+    border-radius: 9px;
+}
+
+.modal-movia .form-control:focus,
+.modal-movia .form-select:focus {
+    border-color: var(--cor-oliva);
+    box-shadow: 0 0 0 3px rgba(99, 125, 50, 0.12);
+}
+
+.form-check-input:checked {
+    background-color: var(--cor-oliva);
+    border-color: var(--cor-oliva);
+}
+
+@media (max-width: 575px) {
+    .modal-movia .modal-header,
+    .modal-movia .modal-body,
+    .modal-movia .modal-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Botões de ação dos veículos */
+
+.card .btn-outline-secondary,
+.card .btn-outline-danger {
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card .btn-outline-secondary:hover {
+    background-color: var(--cor-oliva);
+    border-color: var(--cor-oliva);
+    color: white;
+}
