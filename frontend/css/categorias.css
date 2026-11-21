@@ -1,0 +1,320 @@
+/* MOVIA | Categorias de Veículos */
+
+.categorias-hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 230px;
+    padding: 36px 40px;
+    background: var(--cor-oliva);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.categorias-hero > div {
+    position: relative;
+    z-index: 1;
+}
+
+.categorias-hero h2 {
+    max-width: 650px;
+    margin: 0 0 12px;
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.categorias-hero p {
+    max-width: 540px;
+    margin-bottom: 23px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #edf2e5;
+}
+
+.categorias-hero .hero-icon {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-12deg);
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.13);
+}
+
+.categorias-resumo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 24px 0 35px;
+}
+
+.categorias-resumo .resumo-card {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-height: 115px;
+    padding: 22px;
+    background: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+}
+
+.categorias-resumo .resumo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva);
+    border-radius: 13px;
+    font-size: 22px;
+}
+
+.categorias-resumo .resumo-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.categorias-resumo .resumo-card div span {
+    color: var(--cor-texto-secundario);
+    font-size: 12px;
+}
+
+.categorias-resumo .resumo-card strong {
+    color: var(--cor-texto);
+    font-size: 27px;
+}
+
+.categorias-painel {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 18px;
+    box-shadow: var(--sombra);
+}
+
+.categorias-painel .painel-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.categorias-painel .painel-cabecalho h2 {
+    margin: 0 0 6px;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.categorias-painel .painel-cabecalho p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--cor-texto-secundario);
+}
+
+.categorias-filtros {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 14px;
+    padding: 20px;
+    margin-bottom: 24px;
+    background: #f7f9f2;
+    border: 1px solid var(--cor-borda);
+    border-radius: 13px;
+}
+
+.categorias-filtros .form-label {
+    font-size: 12px;
+    font-weight: 650;
+    color: var(--cor-texto);
+}
+
+.categorias-filtros .form-control,
+.categorias-filtros .input-group-text {
+    min-height: 43px;
+    background: #fff;
+    border-color: var(--cor-borda);
+}
+
+.categorias-filtros .input-group-text {
+    color: var(--cor-oliva);
+}
+
+.categorias-filtros .form-control:focus {
+    border-color: var(--cor-oliva);
+    box-shadow: 0 0 0 3px rgba(99, 125, 50, 0.12);
+}
+
+.categorias-filtros .btn-limpar {
+    min-height: 43px;
+    padding: 0 16px;
+    background: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 9px;
+    color: var(--cor-texto);
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.categorias-filtros .btn-limpar:hover {
+    background: var(--cor-verde-claro);
+}
+
+.tabela-categorias {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tabela-categorias thead th {
+    padding: 15px 16px;
+    background: #f7f9f2;
+    color: var(--cor-texto-secundario);
+    border-bottom: 1px solid var(--cor-borda);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1px;
+}
+
+.tabela-categorias tbody td {
+    padding: 17px 16px;
+    border-bottom: 1px solid var(--cor-borda);
+    color: var(--cor-texto);
+    font-size: 13px;
+}
+
+.tabela-categorias tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.categoria-identidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.categoria-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva);
+    border-radius: 11px;
+    font-size: 18px;
+}
+
+.categoria-nome {
+    font-weight: 700;
+}
+
+.categoria-descricao {
+    color: var(--cor-texto-secundario);
+    max-width: 360px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.categoria-codigo {
+    color: var(--cor-texto-secundario);
+    font-variant-numeric: tabular-nums;
+}
+
+.categoria-acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.categoria-acoes .btn {
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.categoria-acoes .btn-outline-secondary:hover {
+    background: var(--cor-oliva);
+    border-color: var(--cor-oliva);
+    color: #fff;
+}
+
+.modal-movia {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-movia .modal-header,
+.modal-movia .modal-body,
+.modal-movia .modal-footer {
+    padding: 23px 28px;
+}
+
+.modal-movia .modal-header,
+.modal-movia .modal-footer {
+    border-color: var(--cor-borda);
+}
+
+.modal-movia .form-label {
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.modal-movia .form-control {
+    min-height: 44px;
+    border-color: var(--cor-borda);
+    border-radius: 9px;
+}
+
+.modal-movia .form-control:focus {
+    border-color: var(--cor-oliva);
+    box-shadow: 0 0 0 3px rgba(99, 125, 50, 0.12);
+}
+
+@media (max-width: 767px) {
+    .categorias-hero {
+        padding: 28px 24px;
+    }
+
+    .categorias-hero .hero-icon {
+        right: -20px;
+        font-size: 100px;
+    }
+
+    .categorias-resumo {
+        grid-template-columns: 1fr;
+    }
+
+    .categorias-painel {
+        padding: 18px;
+    }
+
+    .categorias-painel .painel-cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categorias-filtros {
+        grid-template-columns: 1fr;
+    }
+
+    .tabela-categorias {
+        min-width: 650px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categoria-acoes {
+        flex-direction: column;
+    }
+}
