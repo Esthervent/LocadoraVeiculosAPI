@@ -1,0 +1,326 @@
+/* ==========================================
+   MOVIA | Gestão de Clientes
+========================================== */
+
+.clientes-hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 230px;
+    padding: 36px 40px;
+    background: var(--cor-oliva);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.hero-conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+.clientes-hero h2 {
+    max-width: 650px;
+    margin: 0 0 12px;
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.clientes-hero p {
+    max-width: 540px;
+    margin-bottom: 23px;
+    color: #edf2e5;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.hero-ilustracao {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg);
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.13);
+}
+
+/* Indicadores */
+
+.clientes-resumo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 24px 0 35px;
+}
+
+.cliente-resumo-card {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-height: 115px;
+    padding: 22px;
+    background: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+}
+
+.resumo-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva);
+    border-radius: 13px;
+    font-size: 22px;
+}
+
+.cliente-resumo-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cliente-resumo-card > div > span {
+    font-size: 12px;
+    color: var(--cor-texto-secundario);
+}
+
+.cliente-resumo-card strong {
+    font-size: 27px;
+    line-height: 1.1;
+    color: var(--cor-texto);
+}
+
+/* Painel */
+
+.clientes-painel {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 18px;
+    box-shadow: var(--sombra);
+}
+
+.clientes-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.clientes-cabecalho h2 {
+    margin: 0 0 6px;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.clientes-cabecalho p {
+    margin: 0;
+    color: var(--cor-texto-secundario);
+    font-size: 13px;
+}
+
+/* Filtros */
+
+.clientes-filtros {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 14px;
+    padding: 20px;
+    margin-bottom: 24px;
+    background: #f7f9f2;
+    border: 1px solid var(--cor-borda);
+    border-radius: 13px;
+}
+
+.clientes-filtros .form-label {
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.clientes-filtros .form-control,
+.clientes-filtros .input-group-text {
+    min-height: 43px;
+    background: #fff;
+    border-color: var(--cor-borda);
+}
+
+.clientes-filtros .input-group-text {
+    color: var(--cor-oliva);
+}
+
+.clientes-filtros .form-control:focus,
+.modal-movia .form-control:focus {
+    border-color: var(--cor-oliva);
+    box-shadow: 0 0 0 3px rgba(99, 125, 50, 0.12);
+}
+
+.btn-limpar {
+    min-height: 43px;
+    padding: 0 16px;
+    background: #fff;
+    border: 1px solid var(--cor-borda);
+    border-radius: 9px;
+    color: var(--cor-texto);
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.btn-limpar:hover {
+    background: var(--cor-verde-claro);
+}
+
+/* Tabela */
+
+.tabela-clientes {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tabela-clientes thead th {
+    padding: 15px 16px;
+    background: #f7f9f2;
+    color: var(--cor-texto-secundario);
+    border-bottom: 1px solid var(--cor-borda);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1px;
+}
+
+.tabela-clientes tbody td {
+    padding: 17px 16px;
+    border-bottom: 1px solid var(--cor-borda);
+    font-size: 13px;
+    color: var(--cor-texto);
+}
+
+.tabela-clientes tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.cliente-identidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cliente-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: var(--cor-verde-claro);
+    color: var(--cor-oliva);
+    font-size: 19px;
+}
+
+.cliente-identidade strong {
+    display: block;
+    font-weight: 700;
+}
+
+.cliente-identidade small {
+    display: block;
+    margin-top: 3px;
+    color: var(--cor-texto-secundario);
+    overflow-wrap: anywhere;
+}
+
+.cliente-acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.cliente-acoes .btn {
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cliente-acoes .btn-outline-secondary:hover {
+    background: var(--cor-oliva);
+    border-color: var(--cor-oliva);
+    color: #fff;
+}
+
+/* Modais */
+
+.modal-movia {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-movia .modal-header,
+.modal-movia .modal-body,
+.modal-movia .modal-footer {
+    padding: 23px 28px;
+}
+
+.modal-movia .modal-header,
+.modal-movia .modal-footer {
+    border-color: var(--cor-borda);
+}
+
+.modal-movia .form-label {
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.modal-movia .form-control {
+    min-height: 44px;
+    border-color: var(--cor-borda);
+    border-radius: 9px;
+}
+
+/* Responsividade */
+
+@media (max-width: 767px) {
+    .clientes-hero {
+        padding: 28px 24px;
+    }
+
+    .hero-ilustracao {
+        right: -20px;
+        font-size: 100px;
+    }
+
+    .clientes-resumo {
+        grid-template-columns: 1fr;
+    }
+
+    .clientes-painel {
+        padding: 18px;
+    }
+
+    .clientes-cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clientes-filtros {
+        grid-template-columns: 1fr;
+    }
+
+    .tabela-clientes {
+        min-width: 850px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cliente-acoes {
+        flex-direction: column;
+    }
+}

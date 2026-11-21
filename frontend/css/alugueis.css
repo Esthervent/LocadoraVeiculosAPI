@@ -1,0 +1,325 @@
+/* MOVIA | Gestão de Aluguéis */
+
+.alugueis-hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 230px;
+    padding: 36px 40px;
+    background: var(--cor-oliva, #637D32);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.alugueis-hero .hero-conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+.alugueis-hero h2 {
+    margin: 0 0 12px;
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.alugueis-hero p {
+    max-width: 550px;
+    margin-bottom: 23px;
+    color: #edf2e5;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.alugueis-hero .hero-ilustracao {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg);
+    font-size: 160px;
+    color: rgba(255,255,255,0.13);
+}
+
+.alugueis-resumo {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 24px 0 35px;
+}
+
+.aluguel-resumo-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 110px;
+    padding: 19px;
+    background: #fff;
+    border: 1px solid var(--cor-borda, #e7eadf);
+    border-radius: 16px;
+    box-shadow: var(--sombra, 0 3px 15px rgba(0,0,0,.03));
+}
+
+.resumo-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--cor-verde-claro, #E4EBCF);
+    color: var(--cor-oliva, #637D32);
+    font-size: 20px;
+}
+
+.aluguel-resumo-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.aluguel-resumo-card > div > span {
+    font-size: 12px;
+    color: var(--cor-texto-secundario, #747b70);
+}
+
+.aluguel-resumo-card strong {
+    font-size: 27px;
+    color: var(--cor-texto, #263526);
+}
+
+.alugueis-painel {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--cor-borda, #e7eadf);
+    border-radius: 18px;
+    box-shadow: var(--sombra, 0 3px 15px rgba(0,0,0,.03));
+}
+
+.painel-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.painel-cabecalho h2 {
+    margin: 0 0 6px;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.painel-cabecalho p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--cor-texto-secundario, #747b70);
+}
+
+.alugueis-filtros {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 170px auto;
+    gap: 14px;
+    align-items: end;
+    padding: 20px;
+    margin-bottom: 24px;
+    background: #f7f9f2;
+    border: 1px solid var(--cor-borda, #e7eadf);
+    border-radius: 13px;
+}
+
+.alugueis-filtros .form-label {
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.alugueis-filtros .form-control,
+.alugueis-filtros .form-select {
+    min-height: 43px;
+    border-color: var(--cor-borda, #e7eadf);
+}
+
+.btn-limpar {
+    min-height: 43px;
+    padding: 0 16px;
+    border: 1px solid var(--cor-borda, #e7eadf);
+    border-radius: 9px;
+    background: #fff;
+    color: var(--cor-texto, #263526);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-limpar:hover {
+    background: var(--cor-verde-claro, #E4EBCF);
+}
+
+.tabela-alugueis {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tabela-alugueis thead th {
+    padding: 15px 13px;
+    background: #f7f9f2;
+    color: var(--cor-texto-secundario, #747b70);
+    border-bottom: 1px solid var(--cor-borda, #e7eadf);
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: .8px;
+    white-space: nowrap;
+}
+
+.tabela-alugueis tbody td {
+    padding: 17px 13px;
+    border-bottom: 1px solid var(--cor-borda, #e7eadf);
+    font-size: 13px;
+    color: var(--cor-texto, #263526);
+}
+
+.aluguel-identidade {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.aluguel-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: var(--cor-verde-claro, #E4EBCF);
+    color: var(--cor-oliva, #637D32);
+    font-size: 18px;
+}
+
+.aluguel-identidade strong,
+.aluguel-identidade small {
+    display: block;
+}
+
+.aluguel-identidade small {
+    margin-top: 4px;
+    color: var(--cor-texto-secundario, #747b70);
+}
+
+.aluguel-periodo small {
+    display: block;
+    margin-top: 4px;
+    color: var(--cor-texto-secundario, #747b70);
+}
+
+.aluguel-status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.aluguel-status.ativo {
+    background: #fff0dc;
+    color: #a75a12;
+}
+
+.aluguel-status.finalizado {
+    background: #e8f2dc;
+    color: #4c712a;
+}
+
+.aluguel-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.aluguel-acoes .btn {
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.modal-movia {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-movia .modal-header,
+.modal-movia .modal-body,
+.modal-movia .modal-footer {
+    padding: 23px 28px;
+}
+
+.modal-movia .modal-header,
+.modal-movia .modal-footer {
+    border-color: var(--cor-borda, #e7eadf);
+}
+
+.modal-movia .form-label {
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.modal-movia .form-control,
+.modal-movia .form-select {
+    min-height: 44px;
+    border-color: var(--cor-borda, #e7eadf);
+    border-radius: 9px;
+}
+
+.modal-movia .form-control:focus,
+.modal-movia .form-select:focus,
+.alugueis-filtros .form-control:focus,
+.alugueis-filtros .form-select:focus {
+    border-color: #637D32;
+    box-shadow: 0 0 0 3px rgba(99,125,50,.12);
+}
+
+@media (max-width: 1100px) {
+    .alugueis-resumo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .alugueis-filtros {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .alugueis-hero {
+        padding: 28px 24px;
+    }
+
+    .alugueis-hero .hero-ilustracao {
+        right: -20px;
+        font-size: 105px;
+    }
+
+    .alugueis-painel {
+        padding: 18px;
+    }
+
+    .painel-cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tabela-alugueis {
+        min-width: 980px;
+    }
+}
+
+@media (max-width: 480px) {
+    .alugueis-resumo,
+    .alugueis-filtros {
+        grid-template-columns: 1fr;
+    }
+}

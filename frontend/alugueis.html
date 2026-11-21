@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguéis | MOVIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alugueis.css">
+</head>
+<body>
+<div class="app-layout">
+    <aside class="sidebar">
+        <a href="index.html" class="sidebar-brand">
+            <span class="brand-icon"><i class="bi bi-car-front-fill"></i></span>
+            <span>
+                <strong>MOVIA<span class="marca-ponto">.</span></strong>
+                <small>GESTÃO DE LOCADORAS</small>
+            </span>
+        </a>
+
+        <div class="sidebar-label">MENU PRINCIPAL</div>
+        <nav class="sidebar-nav" aria-label="Navegação principal">
+            <a href="index.html" class="nav-link">
+                <i class="bi bi-grid-1x2"></i> Visão geral
+            </a>
+            <a href="index.html#veiculos" class="nav-link">
+                <i class="bi bi-car-front"></i> Veículos
+            </a>
+            <a href="clientes.html" class="nav-link">
+                <i class="bi bi-people"></i> Clientes
+            </a>
+            <a href="alugueis.html" class="nav-link active" aria-current="page">
+                <i class="bi bi-calendar-check"></i> Aluguéis
+            </a>
+            <a href="fabricantes.html" class="nav-link">
+                <i class="bi bi-building"></i> Fabricantes
+            </a>
+            <a href="categorias.html" class="nav-link">
+                <i class="bi bi-tags"></i> Categorias
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <i class="bi bi-shield-check"></i> Sistema de gestão
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="topbar">
+            <div>
+                <span class="topbar-eyebrow">CONTROLE DE LOCAÇÕES</span>
+                <h1>Aluguéis</h1>
+            </div>
+            <div class="topbar-profile">
+                <span class="profile-avatar">
+                    <i class="bi bi-person-fill"></i>
+                </span>
+                <span>Administrador</span>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <section class="alugueis-hero">
+                <div class="hero-conteudo">
+                    <span class="welcome-eyebrow">GESTÃO DE LOCAÇÕES</span>
+                    <h2>Cada viagem começa aqui.</h2>
+                    <p>
+                        Acompanhe as locações, consulte os veículos alugados,
+                        gerencie contratos e registre devoluções em um só lugar.
+                    </p>
+                    <button class="btn btn-laranja" id="btnNovoAluguel" type="button">
+                        <i class="bi bi-plus-lg"></i> Novo aluguel
+                    </button>
+                </div>
+                <i class="bi bi-car-front-fill hero-ilustracao" aria-hidden="true"></i>
+            </section>
+
+            <section class="alugueis-resumo" aria-label="Indicadores de aluguéis">
+                <div class="aluguel-resumo-card">
+                    <span class="resumo-icone"><i class="bi bi-journal-check"></i></span>
+                    <div><span>Total de aluguéis</span><strong id="totalAlugueis">—</strong></div>
+                </div>
+                <div class="aluguel-resumo-card">
+                    <span class="resumo-icone"><i class="bi bi-car-front"></i></span>
+                    <div><span>Em andamento</span><strong id="alugueisAtivos">—</strong></div>
+                </div>
+                <div class="aluguel-resumo-card">
+                    <span class="resumo-icone"><i class="bi bi-check-circle"></i></span>
+                    <div><span>Finalizados</span><strong id="alugueisFinalizados">—</strong></div>
+                </div>
+                <div class="aluguel-resumo-card">
+                    <span class="resumo-icone"><i class="bi bi-funnel"></i></span>
+                    <div><span>Resultados da busca</span><strong id="resultadosAlugueis">—</strong></div>
+                </div>
+            </section>
+
+            <section class="alugueis-painel">
+                <div class="painel-cabecalho">
+                    <div>
+                        <span class="section-eyebrow">GERENCIAMENTO</span>
+                        <h2>Histórico de aluguéis</h2>
+                        <p>Consulte, edite e acompanhe as locações da frota.</p>
+                    </div>
+                    <button class="btn btn-outline-secondary btn-sm"
+                            id="btnAtualizarAlugueis" type="button">
+                        <i class="bi bi-arrow-clockwise"></i> Atualizar
+                    </button>
+                </div>
+
+                <div class="alugueis-filtros">
+                    <div>
+                        <label for="filtroClienteAluguel" class="form-label">Cliente</label>
+                        <input type="search" class="form-control" id="filtroClienteAluguel"
+                               placeholder="Nome do cliente">
+                    </div>
+                    <div>
+                        <label for="filtroVeiculoAluguel" class="form-label">Veículo</label>
+                        <input type="search" class="form-control" id="filtroVeiculoAluguel"
+                               placeholder="Modelo ou placa">
+                    </div>
+                    <div>
+                        <label for="filtroStatusAluguel" class="form-label">Situação</label>
+                        <select id="filtroStatusAluguel" class="form-select">
+                            <option value="">Todas</option>
+                            <option value="ativo">Em andamento</option>
+                            <option value="finalizado">Finalizado</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-limpar" id="btnLimparFiltrosAlugueis" type="button">
+                        <i class="bi bi-x-circle"></i> Limpar
+                    </button>
+                </div>
+
+                <div id="avisoAlugueis" role="status" aria-live="polite"></div>
+
+                <div class="table-responsive">
+                    <table class="table tabela-alugueis">
+                        <thead>
+                            <tr>
+                                <th>CLIENTE / VEÍCULO</th>
+                                <th>PERÍODO</th>
+                                <th>DIÁRIA</th>
+                                <th>TOTAL</th>
+                                <th>SITUAÇÃO</th>
+                                <th class="text-end">AÇÕES</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaAlugueis">
+                            <tr>
+                                <td colspan="6" class="text-center py-5">
+                                    Carregando aluguéis...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<!-- Cadastro e edição -->
+<div class="modal fade" id="modalAluguel" tabindex="-1"
+     aria-labelledby="tituloModalAluguel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-movia">
+            <div class="modal-header">
+                <div>
+                    <span class="section-eyebrow">GESTÃO DE LOCAÇÕES</span>
+                    <h2 class="modal-title fs-5" id="tituloModalAluguel">Novo aluguel</h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+            </div>
+
+            <form id="formAluguel">
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="aluguelCliente">Cliente *</label>
+                            <select class="form-select" id="aluguelCliente" required>
+                                <option value="">Selecione o cliente</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="aluguelVeiculo">Veículo *</label>
+                            <select class="form-select" id="aluguelVeiculo" required>
+                                <option value="">Selecione o veículo</option>
+                            </select>
+                            <div class="form-text">
+                                No cadastro, somente veículos disponíveis podem ser selecionados.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="aluguelDataInicio">Data de início *</label>
+                            <input type="datetime-local" class="form-control"
+                                   id="aluguelDataInicio" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="aluguelDataFim">Devolução prevista *</label>
+                            <input type="datetime-local" class="form-control"
+                                   id="aluguelDataFim" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="aluguelKmInicial">
+                                Quilometragem inicial *
+                            </label>
+                            <input type="number" class="form-control"
+                                   id="aluguelKmInicial" min="0" step="1" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="aluguelValorDiaria">
+                                Valor da diária (R$) *
+                            </label>
+                            <input type="number" class="form-control"
+                                   id="aluguelValorDiaria" min="0.01" step="0.01" required>
+                        </div>
+                    </div>
+                    <div id="mensagemAluguel" class="mt-3"
+                         role="status" aria-live="polite"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light"
+                            data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-laranja"
+                            id="btnSalvarAluguel">
+                        <i class="bi bi-check-lg"></i> Salvar aluguel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Registrar devolução -->
+<div class="modal fade" id="modalDevolucao" tabindex="-1"
+     aria-labelledby="tituloModalDevolucao" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-movia">
+            <div class="modal-header">
+                <div>
+                    <span class="section-eyebrow">FINALIZAÇÃO</span>
+                    <h2 class="modal-title fs-5" id="tituloModalDevolucao">
+                        Registrar devolução
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+            </div>
+            <form id="formDevolucao">
+                <div class="modal-body">
+                    <p id="resumoDevolucao" class="text-muted small"></p>
+                    <div class="mb-3">
+                        <label for="devolucaoData" class="form-label">
+                            Data da devolução *
+                        </label>
+                        <input type="datetime-local" class="form-control"
+                               id="devolucaoData" required>
+                    </div>
+                    <div>
+                        <label for="devolucaoKmFinal" class="form-label">
+                            Quilometragem final *
+                        </label>
+                        <input type="number" class="form-control"
+                               id="devolucaoKmFinal" min="0" step="1" required>
+                    </div>
+                    <div id="mensagemDevolucao" class="mt-3"
+                         role="status" aria-live="polite"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light"
+                            data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-laranja"
+                            id="btnConfirmarDevolucao">
+                        <i class="bi bi-check-circle"></i> Registrar devolução
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Exclusão -->
+<div class="modal fade" id="modalExcluirAluguel" tabindex="-1"
+     aria-labelledby="tituloExcluirAluguel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-movia">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="tituloExcluirAluguel">
+                    Confirmar exclusão
+                </h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Deseja excluir o aluguel <strong id="identificacaoAluguelExcluir"></strong>?</p>
+                <p class="text-muted small mb-0">
+                    Esta ação não poderá ser desfeita.
+                </p>
+                <div id="mensagemExclusaoAluguel" class="mt-3"
+                     role="status" aria-live="polite"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light"
+                        data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger"
+                        id="btnConfirmarExclusaoAluguel">
+                    <i class="bi bi-trash3"></i> Excluir aluguel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/alugueis.js"></script>
+</body>
+</html>
