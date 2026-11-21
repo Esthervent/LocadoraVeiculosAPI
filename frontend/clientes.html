@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,305 +11,286 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/clientes.css">
 </head>
+
 <body>
-<div class="app-layout">
+    <div class="app-layout">
 
-    <aside class="sidebar">
-        <a href="index.html" class="sidebar-brand">
-            <span class="brand-icon">
-                <i class="bi bi-car-front-fill"></i>
-            </span>
-            <span>
-                <strong>MOVIA<span class="marca-ponto">.</span></strong>
-                <small>GESTÃO DE LOCADORAS</small>
-            </span>
-        </a>
-
-        <div class="sidebar-label">MENU PRINCIPAL</div>
-
-        <nav class="sidebar-nav" aria-label="Navegação principal">
-            <a href="index.html" class="nav-link">
-                <i class="bi bi-grid-1x2"></i> Visão geral
-            </a>
-            <a href="index.html#veiculos" class="nav-link">
-                <i class="bi bi-car-front"></i> Veículos
-            </a>
-            <a href="clientes.html" class="nav-link active" aria-current="page">
-                <i class="bi bi-people"></i> Clientes
-            </a>
-            <a href="index.html#alugueis" class="nav-link">
-                <i class="bi bi-calendar-check"></i> Aluguéis
-            </a>
-            <a href="fabricantes.html" class="nav-link">
-                <i class="bi bi-building"></i> Fabricantes
-            </a>
-            <a href="categorias.html" class="nav-link">
-                <i class="bi bi-tags"></i> Categorias
-            </a>
-        </nav>
-
-        <div class="sidebar-footer">
-            <i class="bi bi-shield-check"></i> Sistema de gestão
-        </div>
-    </aside>
-
-    <div class="main-content">
-        <header class="topbar">
-            <div>
-                <span class="topbar-eyebrow">GESTÃO DE CADASTROS</span>
-                <h1>Clientes</h1>
-            </div>
-            <div class="topbar-profile">
-                <span class="profile-avatar">
-                    <i class="bi bi-person-fill"></i>
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-brand">
+                <span class="brand-icon">
+                    <i class="bi bi-car-front-fill"></i>
                 </span>
-                <span>Administrador</span>
+                <span>
+                    <strong>MOVIA<span class="marca-ponto">.</span></strong>
+                    <small>GESTÃO DE LOCADORAS</small>
+                </span>
+            </a>
+
+            <div class="sidebar-label">MENU PRINCIPAL</div>
+
+            <nav class="sidebar-nav" aria-label="Navegação principal">
+                <a href="index.html" class="nav-link">
+                    <i class="bi bi-grid-1x2"></i> Visão geral
+                </a>
+                <a href="index.html#veiculos" class="nav-link">
+                    <i class="bi bi-car-front"></i> Veículos
+                </a>
+                <a href="clientes.html" class="nav-link active" aria-current="page">
+                    <i class="bi bi-people"></i> Clientes
+                </a>
+                <a href="alugueis.html" class="nav-link">
+                    <i class="bi bi-calendar-check"></i> Aluguéis
+                </a>
+                <a href="fabricantes.html" class="nav-link">
+                    <i class="bi bi-building"></i> Fabricantes
+                </a>
+                <a href="categorias.html" class="nav-link">
+                    <i class="bi bi-tags"></i> Categorias
+                </a>
+                <a href="consultas.html" class="nav-link">
+                    <i class="bi bi-bar-chart-line"></i> Consultas
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <i class="bi bi-shield-check"></i> Sistema de gestão
             </div>
-        </header>
+        </aside>
 
-        <main class="dashboard-content">
-
-            <section class="clientes-hero">
-                <div class="hero-conteudo">
-                    <span class="welcome-eyebrow">RELACIONAMENTO COM CLIENTES</span>
-                    <h2>Pessoas que movem nossa história.</h2>
-                    <p>
-                        Gerencie os dados dos clientes da locadora,
-                        mantenha os cadastros atualizados e facilite
-                        o atendimento.
-                    </p>
-                    <button type="button" class="btn btn-laranja"
-                            id="btnNovoCliente">
-                        <i class="bi bi-plus-lg"></i> Novo cliente
-                    </button>
-                </div>
-                <i class="bi bi-people-fill hero-ilustracao"
-                   aria-hidden="true"></i>
-            </section>
-
-            <section class="clientes-resumo" aria-label="Indicadores de clientes">
-                <div class="cliente-resumo-card">
-                    <span class="resumo-icone"><i class="bi bi-people"></i></span>
-                    <div>
-                        <span>Clientes cadastrados</span>
-                        <strong id="totalClientes">—</strong>
-                    </div>
-                </div>
-
-                <div class="cliente-resumo-card">
-                    <span class="resumo-icone"><i class="bi bi-envelope-check"></i></span>
-                    <div>
-                        <span>Com e-mail informado</span>
-                        <strong id="clientesComEmail">—</strong>
-                    </div>
-                </div>
-
-                <div class="cliente-resumo-card">
-                    <span class="resumo-icone"><i class="bi bi-funnel"></i></span>
-                    <div>
-                        <span>Resultados da busca</span>
-                        <strong id="resultadosClientes">—</strong>
-                    </div>
-                </div>
-            </section>
-
-            <section class="clientes-painel">
-                <div class="clientes-cabecalho">
-                    <div>
-                        <span class="section-eyebrow">GERENCIAMENTO</span>
-                        <h2>Clientes cadastrados</h2>
-                        <p>Consulte, atualize e gerencie os registros da locadora.</p>
-                    </div>
-                    <button type="button" class="btn btn-outline-secondary btn-sm"
-                            id="btnAtualizarClientes">
-                        <i class="bi bi-arrow-clockwise"></i> Atualizar
-                    </button>
-                </div>
-
-                <div class="clientes-filtros">
-                    <div>
-                        <label for="filtroNomeCliente" class="form-label">
-                            Buscar por nome
-                        </label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="bi bi-search"></i>
-                            </span>
-                            <input type="search" class="form-control"
-                                   id="filtroNomeCliente"
-                                   placeholder="Ex.: Maria">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="filtroCpfCliente" class="form-label">
-                            Buscar por CPF
-                        </label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="bi bi-person-vcard"></i>
-                            </span>
-                            <input type="search" class="form-control"
-                                   id="filtroCpfCliente"
-                                   placeholder="Digite o CPF ou parte dele">
-                        </div>
-                    </div>
-
-                    <button type="button" class="btn btn-limpar"
-                            id="btnLimparFiltrosClientes">
-                        <i class="bi bi-x-circle"></i> Limpar
-                    </button>
-                </div>
-
-                <div id="avisoClientes" role="status"
-                     aria-live="polite"></div>
-
-                <div class="table-responsive">
-                    <table class="table tabela-clientes">
-                        <thead>
-                            <tr>
-                                <th scope="col">CLIENTE</th>
-                                <th scope="col">CPF</th>
-                                <th scope="col">TELEFONE</th>
-                                <th scope="col">CÓDIGO</th>
-                                <th scope="col" class="text-end">AÇÕES</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tabelaClientes">
-                            <tr>
-                                <td colspan="5" class="text-center py-5">
-                                    Carregando clientes...
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </main>
-    </div>
-</div>
-
-<!-- Modal de cadastro / edição -->
-<div class="modal fade" id="modalCliente" tabindex="-1"
-     aria-labelledby="tituloModalCliente" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-movia">
-            <div class="modal-header">
+        <div class="main-content">
+            <header class="topbar">
                 <div>
-                    <span class="section-eyebrow">GESTÃO DE CLIENTES</span>
-                    <h2 class="modal-title fs-5" id="tituloModalCliente">
-                        Novo cliente
-                    </h2>
+                    <span class="topbar-eyebrow">GESTÃO DE CADASTROS</span>
+                    <h1>Clientes</h1>
                 </div>
-                <button type="button" class="btn-close"
-                        data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
+                <div class="topbar-profile">
+                    <span class="profile-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </span>
+                    <span>Administrador</span>
+                </div>
+            </header>
 
-            <form id="formCliente">
-                <div class="modal-body">
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <label for="clienteNome" class="form-label">
-                                Nome completo *
-                            </label>
-                            <input type="text" class="form-control"
-                                   id="clienteNome" maxlength="150"
-                                   autocomplete="name"
-                                   placeholder="Nome completo do cliente" required>
-                        </div>
+            <main class="dashboard-content">
 
-                        <div class="col-md-6">
-                            <label for="clienteCpf" class="form-label">
-                                CPF *
-                            </label>
-                            <input type="text" class="form-control"
-                                   id="clienteCpf" maxlength="14"
-                                   inputmode="numeric"
-                                   placeholder="000.000.000-00" required>
-                        </div>
+                <section class="clientes-hero">
+                    <div class="hero-conteudo">
+                        <span class="welcome-eyebrow">RELACIONAMENTO COM CLIENTES</span>
+                        <h2>Pessoas que movem nossa história.</h2>
+                        <p>
+                            Gerencie os dados dos clientes da locadora,
+                            mantenha os cadastros atualizados e facilite
+                            o atendimento.
+                        </p>
+                        <button type="button" class="btn btn-laranja" id="btnNovoCliente">
+                            <i class="bi bi-plus-lg"></i> Novo cliente
+                        </button>
+                    </div>
+                    <i class="bi bi-people-fill hero-ilustracao" aria-hidden="true"></i>
+                </section>
 
-                        <div class="col-md-6">
-                            <label for="clienteTelefone" class="form-label">
-                                Telefone *
-                            </label>
-                            <input type="tel" class="form-control"
-                                   id="clienteTelefone" maxlength="15"
-                                   autocomplete="tel"
-                                   placeholder="(31) 99999-9999" required>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="clienteEmail" class="form-label">
-                                E-mail *
-                            </label>
-                            <input type="email" class="form-control"
-                                   id="clienteEmail" maxlength="150"
-                                   autocomplete="email"
-                                   placeholder="cliente@exemplo.com" required>
+                <section class="clientes-resumo" aria-label="Indicadores de clientes">
+                    <div class="cliente-resumo-card">
+                        <span class="resumo-icone"><i class="bi bi-people"></i></span>
+                        <div>
+                            <span>Clientes cadastrados</span>
+                            <strong id="totalClientes">—</strong>
                         </div>
                     </div>
 
-                    <div id="mensagemCliente" class="mt-3"
-                         role="status" aria-live="polite"></div>
+                    <div class="cliente-resumo-card">
+                        <span class="resumo-icone"><i class="bi bi-envelope-check"></i></span>
+                        <div>
+                            <span>Com e-mail informado</span>
+                            <strong id="clientesComEmail">—</strong>
+                        </div>
+                    </div>
+
+                    <div class="cliente-resumo-card">
+                        <span class="resumo-icone"><i class="bi bi-funnel"></i></span>
+                        <div>
+                            <span>Resultados da busca</span>
+                            <strong id="resultadosClientes">—</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="clientes-painel">
+                    <div class="clientes-cabecalho">
+                        <div>
+                            <span class="section-eyebrow">GERENCIAMENTO</span>
+                            <h2>Clientes cadastrados</h2>
+                            <p>Consulte, atualize e gerencie os registros da locadora.</p>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" id="btnAtualizarClientes">
+                            <i class="bi bi-arrow-clockwise"></i> Atualizar
+                        </button>
+                    </div>
+
+                    <div class="clientes-filtros">
+                        <div>
+                            <label for="filtroNomeCliente" class="form-label">
+                                Buscar por nome
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input type="search" class="form-control" id="filtroNomeCliente"
+                                    placeholder="Ex.: Maria">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="filtroCpfCliente" class="form-label">
+                                Buscar por CPF
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-vcard"></i>
+                                </span>
+                                <input type="search" class="form-control" id="filtroCpfCliente"
+                                    placeholder="Digite o CPF ou parte dele">
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-limpar" id="btnLimparFiltrosClientes">
+                            <i class="bi bi-x-circle"></i> Limpar
+                        </button>
+                    </div>
+
+                    <div id="avisoClientes" role="status" aria-live="polite"></div>
+
+                    <div class="table-responsive">
+                        <table class="table tabela-clientes">
+                            <thead>
+                                <tr>
+                                    <th scope="col">CLIENTE</th>
+                                    <th scope="col">CPF</th>
+                                    <th scope="col">TELEFONE</th>
+                                    <th scope="col">CÓDIGO</th>
+                                    <th scope="col" class="text-end">AÇÕES</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabelaClientes">
+                                <tr>
+                                    <td colspan="5" class="text-center py-5">
+                                        Carregando clientes...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal de cadastro / edição -->
+    <div class="modal fade" id="modalCliente" tabindex="-1" aria-labelledby="tituloModalCliente" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-movia">
+                <div class="modal-header">
+                    <div>
+                        <span class="section-eyebrow">GESTÃO DE CLIENTES</span>
+                        <h2 class="modal-title fs-5" id="tituloModalCliente">
+                            Novo cliente
+                        </h2>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <form id="formCliente">
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="clienteNome" class="form-label">
+                                    Nome completo *
+                                </label>
+                                <input type="text" class="form-control" id="clienteNome" maxlength="150"
+                                    autocomplete="name" placeholder="Nome completo do cliente" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="clienteCpf" class="form-label">
+                                    CPF *
+                                </label>
+                                <input type="text" class="form-control" id="clienteCpf" maxlength="14"
+                                    inputmode="numeric" placeholder="000.000.000-00" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="clienteTelefone" class="form-label">
+                                    Telefone *
+                                </label>
+                                <input type="tel" class="form-control" id="clienteTelefone" maxlength="15"
+                                    autocomplete="tel" placeholder="(31) 99999-9999" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="clienteEmail" class="form-label">
+                                    E-mail *
+                                </label>
+                                <input type="email" class="form-control" id="clienteEmail" maxlength="150"
+                                    autocomplete="email" placeholder="cliente@exemplo.com" required>
+                            </div>
+                        </div>
+
+                        <div id="mensagemCliente" class="mt-3" role="status" aria-live="polite"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="btn btn-laranja" id="btnSalvarCliente">
+                            <i class="bi bi-check-lg"></i> Salvar cliente
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmação de exclusão -->
+    <div class="modal fade" id="modalExcluirCliente" tabindex="-1" aria-labelledby="tituloExcluirCliente"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-movia">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="tituloExcluirCliente">
+                        Confirmar exclusão
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        Deseja realmente excluir o cliente
+                        <strong id="nomeClienteExcluir"></strong>?
+                    </p>
+                    <p class="text-muted small">
+                        Esta ação não poderá ser desfeita.
+                        Clientes vinculados a aluguéis podem ter a
+                        exclusão bloqueada pelo banco de dados.
+                    </p>
+                    <div id="mensagemExclusaoCliente" role="status" aria-live="polite"></div>
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light"
-                            data-bs-dismiss="modal">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">
                         Cancelar
                     </button>
-                    <button type="submit" class="btn btn-laranja"
-                            id="btnSalvarCliente">
-                        <i class="bi bi-check-lg"></i> Salvar cliente
+                    <button type="button" class="btn btn-danger" id="btnConfirmarExclusaoCliente">
+                        <i class="bi bi-trash3"></i> Excluir cliente
                     </button>
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- Modal de confirmação de exclusão -->
-<div class="modal fade" id="modalExcluirCliente" tabindex="-1"
-     aria-labelledby="tituloExcluirCliente" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content modal-movia">
-            <div class="modal-header">
-                <h2 class="modal-title fs-5" id="tituloExcluirCliente">
-                    Confirmar exclusão
-                </h2>
-                <button type="button" class="btn-close"
-                        data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-
-            <div class="modal-body">
-                <p>
-                    Deseja realmente excluir o cliente
-                    <strong id="nomeClienteExcluir"></strong>?
-                </p>
-                <p class="text-muted small">
-                    Esta ação não poderá ser desfeita.
-                    Clientes vinculados a aluguéis podem ter a
-                    exclusão bloqueada pelo banco de dados.
-                </p>
-                <div id="mensagemExclusaoCliente"
-                     role="status" aria-live="polite"></div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light"
-                        data-bs-dismiss="modal">
-                    Cancelar
-                </button>
-                <button type="button" class="btn btn-danger"
-                        id="btnConfirmarExclusaoCliente">
-                    <i class="bi bi-trash3"></i> Excluir cliente
-                </button>
             </div>
         </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/clientes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/clientes.js"></script>
 </body>
+
 </html>
